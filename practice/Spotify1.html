@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+<style>
+    body
+    {
+        background-color: rgb(27, 27, 27);
+    }
+    *{
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+    }
+    nav{
+        display: flex;
+        justify-content: right;
+        color: aliceblue;
+        background-color: rgb(16, 16, 16);
+        padding: 22px;
+    }
+    input[type="button"]{
+        width:100px;
+        height: 42px;
+        background-color: whitesmoke;
+        color: black;
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 22px;
+        margin-inline: 22px ;
+    }
+    nav h3{
+        margin-top: 9px;
+    }
+    .main{
+        display: flex;
+    }
+    .main .sidebar{
+        background-color: black;
+        color: azure;
+        padding: 22px ;
+        height: 700px;
+        margin-top: -91px;
+
+    }
+    .sidebar .logo img{
+        width: 90%;
+        border-radius: 50%;
+    }
+    .sidebar .logo .h1{
+        margin-top: 4px;
+    }
+    .sidebar .h4{
+        margin-top: 26px;
+    }
+    .main .card{
+        display: flex;
+        justify-content: center;
+        margin-left: 33px;
+        margin-top: 55px;
+    }
+    .main .card .crd{
+        width: 200px;
+        height: 280px;
+        background-color: gray;
+        border-radius: 8px;
+        margin-inline:11px ;
+        text-align: center;
+    }
+    .main .card .crd img{
+        width: 90%;
+        padding: 11px;
+        border-radius: 20px;
+    }
+    h3:hover{
+    color: rgb(2, 255, 2);
+    }
+    input[type="button"]:hover{
+        background-color: black;
+        color: white;
+    }
+    .main .card .crd:hover{
+        background-color: rgb(196, 189, 189);
+    }
+    .sidebar .logo img:hover{
+        border: 2px solid rgb(136, 238, 3);
+    }
+    h3:active{
+        color: rgb(56, 228, 56);
+    }
+    .sidebar .logo img:active{
+        border: 2px solid black;
+    }
+    .main .card .crd:active{
+        border: 2px solid rgb(253, 253, 255);
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <input type="button" value="sign In">
+        <input type="button" value="Log In">
+    </nav>
+    <div class="main">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="Spotify logo.png"><br>
+            </div>
+            <br><br>
+                <h3>Home</h3><br>
+                <h3>Search</h3><br>
+                <h3>Your library</h3>
+                <br><br><br>
+                <h3>Create playlist</h3><br>
+                <h3>Liked song</h3><br>
+            </div>
+            <div class="card">
+                <div class="crd">
+                    <img src="Tumhari.jpg">
+                    <h2>Tumhari Mohabbat</h2>
+                    <p>by Javed-Mohsin, Stebin Ben, Chinmayi Sripada</p>
+                </div>
+                <div class="crd">
+                    <img src="Teri bato.jpg">
+                    <h2>Teri Baaton Mein Aisa Uljha Jiya</h2>
+                    <p>by Tanishk Bagchi, Mitraz, Raghav, Sachin-Jigar  </p>
+                </div>
+                <div class="crd">
+                    <img src="Jawan.jpg">
+                    <h2>Jawan</h2>
+                    <p>by Anirudh Ravichander</p>
+                </div>
+                <div class="crd">
+                    <img src="ANIMAL.jpg">
+                    <h2>ANIMAL</h2>
+                    <p>by by Various Artists</p>
+                </div>
+                 <div class="crd">
+                    <img src="Chaleya.jpg">
+                    <h2>Chaleya</h2>
+                    <p>by by Various Artists</p>
+                </div> 
+            </div>
+    </div>
+</body>
+</html>
