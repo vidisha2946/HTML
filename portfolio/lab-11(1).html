@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gardient</title>
+	<style type="text/css">
+		.parent{
+			height: 650px;
+			width: 60%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-image: linear-gradient(#030057,#030057);
+			border: 1px	solid black;
+			gap: 10px;
+			padding: 10px;
+		}
+		.row1{
+			height: 100px;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+		.box1,.box2,.box3,
+		.box4,.box5,.box6,
+		.box7,.box8,.box9,
+		.box10,.box11,.box12,
+		.box13,.box14,.box15{
+			height: 100px;
+			width: 30%;
+			border: 1px solid white;
+		}	
+	</style>
+</head>
+<body>
+		<div class="parent">
+			<div class="row1">
+				<div class="box1" style="background-image: linear-gradient(60deg,darkgreen,white,darkgreen);"></div>
+				<div class="box2" style="background-image: linear-gradient(40deg,darkblue,white,darkblue);"></div>
+				<div class="box3" style="background-image: linear-gradient(120deg,skyblue,white,#ed4646);"></div>
+			</div>
+			<div class="row1">
+				<div class="box4" style="background-image: radial-gradient(pink,red);"></div>
+				<div class="box5" style="background-image: radial-gradient(yellow,red);"></div>
+				<div class="box6" style="background-image: radial-gradient(skyblue,purple);"></div>
+			</div>
+			<div class="row1">
+				<div class="box7" style="background-image: linear-gradient(120deg, red,yellow,green);"></div>
+				<div class="box8" style="background-image: linear-gradient(200deg,darkblue,white,purple);"></div>
+				<div class="box9" style="background-image: linear-gradient(10deg,orange,yellow,red);"></div>
+			</div>
+			<div class="row1">
+				<div class="box10" style="background-image: radial-gradient(yellow,pink);"></div>
+				<div class="box11" style="background-image: radial-gradient(pink,limegreen);"></div>
+				<div class="box12" style="background-image: radial-gradient(limegreen,olive);"></div>
+			</div>
+			<div class="row1">
+				<div class="box13" style="background-image: linear-gradient(120deg,pink,blue,hotpink);"></div>
+				<div class="box14" style="background-image: linear-gradient(to top,hotpink,skyblue,blue);"></div>
+				<div class="box15" style="background-image: linear-gradient(250deg,#adee41,#8b3abe,#d162b5);"></div>
+			</div>
+		</div>
+</body>
+</html>
