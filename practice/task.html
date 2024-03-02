@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Task</title>
+        </head>
+        <style>
+            body{
+                background-color:black;
+            }
+            *{
+                box-sizing: border-box;
+            }
+
+            @keyframes rainbow 
+            {
+                0%
+                {
+                    top:-100px;
+                }
+                10%
+                {
+                    border-radius: 100%;
+                    top:80px;
+
+                }
+                100%
+                {
+                    top:200px;
+                }
+            }
+            .rain
+            {
+                
+                top:-100;
+                position: relative;
+                animation-name: rainbow;
+                animation-duration: 10s;
+                margin-left: 5px;
+                height: 100px;
+                width: 20px;
+                border: 90px;
+                float: left;
+                animation-fill-mode: forwards;
+        
+            }
+            .vio
+            {
+                height: 20px;
+                background-color: violet;
+                animation-delay: 1s;
+            }
+            .blue
+            {
+                height: 30px;
+                background-color: blue;
+                animation-delay: 2s;
+            }
+            .sky
+            {
+                height: 40px;
+                background-color:skyblue;
+                animation-delay: 3s;
+            }
+            .green
+            {
+                height: 50px;
+                background-color:greenyellow;
+                animation-delay: 4s;
+            }
+            .yellow
+            {
+                height: 40px;
+                background-color:yellow;
+                animation-delay: 5s;
+            }
+            .orange
+            {
+                height: 30px;
+                background-color:darkorange;
+                animation-delay: 6s;
+            }
+            .red
+            {
+                height: 20px;
+                background-color:red;
+                animation-delay: 7s;
+            }
+            
+        </style>
+        <body>
+            <div class="rain vio"></div>
+            <div class="rain blue"></div>
+            <div class="rain sky"></div>
+            <div class="rain green"></div>
+            <div class="rain yellow"></div>
+            <div class="rain orange"></div>
+            <div class="rain red"></div>
+        </body>
+</html>
