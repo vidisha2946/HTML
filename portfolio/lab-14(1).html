@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: linear-gradient(rgb(249, 237, 237),rgb(234, 133, 133),rgb(249, 237, 237));
+            height: 100vh;
+            width: 70%;
+            position: absolute;
+            left: 25vh;
+            top: 5vh;
+            padding: 5%;
+        }
+        .content{
+            background-color: white;
+            height: 100%;
+            width: 100%;
+        }
+        .imgcontent{
+            height: 100%;
+            width: 50%;
+            background-color: rgb(250, 236, 236);
+            float: left;
+        }
+        .spacer{
+            height: 20%;
+            width: 100%;
+            float: left;
+        }
+        #icon{
+            height: 20px;
+            width:20px;
+            margin: 5%;
+        }
+        .floater{
+            height: 10%;
+            width: 70%;
+            position: absolute;
+            background-color: white;
+            top: 75%;
+            left: 15%;
+            border: 1px solid black;
+            
+        }
+        .backtobed{
+            height: 3%;
+            width: 100%;
+            font-size: 12px;
+        }
+        .info{
+            height: 100%;
+            width: 50%;
+            float:right;
+            background-color: white;
+            padding: 3%;
+        }
+        .collEsse{
+            height: 14%;
+            width: 100%;
+            padding-top:3% ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <div class="imgcontent">
+                <div class="spacer">
+                    <div id="icon">
+                        <img src="./option.png" height="100%"> 
+                    </div>
+                    <div id="icon">
+                        <img src="./search.png" height="100%">
+                    </div>
+                </div>
+                <img src="./set.jpg" width="100%">
+                <div class="spacer">
+                    <div id="icon">
+                        <img src="./profile.png" height="100%"> 
+                    </div>
+                    <div id="icon">
+                        <img src="./bag.png" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="floater">
+                <div name="pic" style="height: 100%; width: 18%;float: left;padding-left: 30px;padding-top: 10px;">
+                    <img src="./set.jpg" height="80%" style="border: 1px solid lightgray;">
+                </div>
+                <div name="information" style="height: 100%; width: 40%; float: left;padding-top: 15px;">
+                    <b><text1>College Essentials</text1></b><br>
+                    <text2>Everything you need for freshman year.</text2>
+                </div>
+                <div name="add" style="height: 100%;width: 15%;float: left;font-size: 14px;padding-top: 10px;">
+                    <b>Add ons</b><br>
+                    <img src="./add.png" height="30%" style="padding-left: 15px;">
+                </div>
+                <div name="price" style="height:100%;width:10%;float: left;padding-top: 15px;padding-left: 20px;">
+                    <text1><b>$195</b></text1>
+                </div>
+                <div name="button" style="height:100%;width:15%;float: left;padding-top: 10px;">
+                    <button style="background:darkblue;width: 90%;height: 45%;float: left;color: white;">Add to cart</button>
+                </div>
+                
+            </div>
+            <div class="info">
+                <div class="backtobed">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div style="height: 75%;width:6%;float:left;"><img src="./back.png" height="100%">
+                        
+                        </div>
+                        <b>Back to bedroom</b>
+                    </a>
+                </div>
+                <div class="collEsse">
+                    <div style="height: 15%;width: 100%;font-size: 11px;color: grey;font-weight: bold;">BEDROOM</div>
+                    <div style="height: 50%;width: 100%;font-size: 25px;padding-top: 2%;font-weight: bold;">College Essentials</div>
+                    <div style="height:35%;width: 100%;">
+                        <div style="height:100%;float: left;"><img src="./rating.jpg" height="100%" /></div>
+                        <div style="height:100%;float: left;padding: 1.5%;font-size: 13px;">4.4(328 reviews)</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
