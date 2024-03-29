@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-cube</title>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: rgb(132, 233, 37);
+            height: 100vh;
+        }
+        .container{
+            height: 60vh;
+            width: 30vw;
+            position: absolute;
+            top:50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            perspective: 1000px;
+        }
+        .cube{
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            top:100px;
+            left: 100px;
+            transform-style:preserve-3d ;
+            animation: cube 5s infinite;
+        }
+        @keyframes cube{
+            0%{transform:  rotateX(45deg) rotateY(-45deg)}
+            25%{transform:  rotateX(-45deg) rotateY(-45deg)}
+            50%{transform:  rotateX(45deg) rotateY(45deg)}
+            75%{transform:  rotateX(-45deg) rotateY(45deg)}
+            100%{transform:  rotateX(45deg) rotateY(-45deg)}
+        }    
+        .side{
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            padding: 100px 0px;
+            color: white;
+            background-color: black;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+            font-size: 32px;
+            position: absolute;
+            transition: all 1s;
+        }
+        #front{
+            transform: translateZ(125px);
+        }
+        #back{
+            transform: translateZ(-125px);
+        }
+        #left{
+            right: 125px;
+            transform: rotateY(-90deg);
+        }
+        #right{
+            left: 125px;
+            transform: rotateY(90deg);
+        }
+        #top{
+            bottom: 125px;
+            transform: rotateX(90deg);
+        }
+        #bottom{
+            top: 125px;
+            transform: rotateX(-90deg);
+        }
+
+        .cube:hover{
+            #front{
+                transform: translateZ(180px);
+            }
+            #back{
+                transform: translateZ(-180px);
+
+            }
+            #left{right: 180px;}
+            #right{left: 180px;}
+            #top{bottom: 180px;}
+            #bottom{top: 180px;}
+        }
+    </style>
+
+</head>
+<body>
+   
+    <div class="container">
+        <div class="cube">
+            <div class="side" id="front">front</div>
+            <div class="side" id="back">back</div>
+            <div class="side" id="left">left</div>
+            <div class="side" id="right">right</div>
+            <div class="side" id="top">top</div>
+            <div class="side" id="bottom">bottom</div>
+        </div>
+    </div>
+    
+
+</body></html>
